@@ -1,0 +1,14 @@
+:root {
+  --color-blue: #52c1cc;
+  --color-beige: #c7b299;
+  --color-grey: #f2f2f2;
+  --color-white: #fff;
+
+  --font-body: "Droid Sans", serif;
+  --font-header: "Oswald", sans-serif;
+  --font-nav: "Oswald", sans-serif;
+}
+
+html {
+  font-family: var(--font-body);
+}
