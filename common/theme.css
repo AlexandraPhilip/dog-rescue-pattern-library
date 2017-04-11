@@ -1,13 +1,44 @@
 :root {
-  --color-blue: #52c1cc;
-  --color-beige: #c7b299;
-  --color-grey: #f2f2f2;
+  --color-primary: #52c1cc;
+  --color-secondary: #c7b299;
+  --color-neutral: #f2f2f2;
   --color-white: #fff;
+  --color-black: #000;
 
-  --font-primary: "Droid Sans", serif;
-  --font-secondary: oswald, sans-serif;
+  --font-primary: "Oswald", sans-serif;
+  --font-secondary: "Droid Sans", serif;
 }
 
 html {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+h4, h5, h6 {
+  color: var(--color-neutral-blue);
+}
+
+ul, ol, dl {
+  color: var(--color-primary);
+}
+
+blockquote {
+  color: var(--color-primary-light);
+}
+
+em, strong, del, ins, abbr, dfn, i, b, mark, q, s, u {
+  color: var(--color-primary-light);
+}
+
+a {
+  font-family: var(--font-primary)
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+mark {
+  background-color: var(--color-whatever);
 }

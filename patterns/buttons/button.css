@@ -1,0 +1,36 @@
+.btn {
+  background-color: var(--color-primary);
+  border-color: var(--color-primay);
+  color: var(--color-white);
+  border-radius: 10px;
+  transform: scale(1);
+}
+
+.btn-light {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 10px;
+  transform: scale(1);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-black);
+  border-radius: 10px;
+  transform: scale(1);
+}
+
+.btn-light:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 10px;
+
+}
+
+.btn-ghost:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+  border-color: transparent;
+}
