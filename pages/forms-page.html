@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Application</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/banners/banner.css" rel="stylesheet">
+  <link href="../patterns/buttons/button.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/floating-action-button/fab.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/forms/forms.css" rel="stylesheet">
+  <link href="../patterns/nav/nav.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="island-1 list-group-inline grid">
+      <div class="unit xs-1 m-1-2 l-1-5 island-1-2 text-center">
+        <img class="i--48 icon" src="../images/logo.svg" alt="logo">
+        <i class="icon-label not-italic kilo bold">Loyal Rescue Inc.</i>
+      </div>
+      <nav class="text-center unit xs-1 m-1-2 l-1-5">
+        <ol class="list-group-inline">
+          <li class="island-1-4">
+            <a href="#" class="btn btn-ghost">Home</a>
+          </li>
+          <li class="island-1-4">
+            <a href="#" class="btn btn-ghost">Adopt</a>
+          </li>
+          <li class="island-1-4">
+            <a href="#" class="btn btn-ghost">Application</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="unit xs-1 m-1 l-1">
+      <img class="img-flex" src="../images/production/dog-banner.jpg" alt="logo">
+    </div>
+      <div class="grid color">
+        <div class="max-length pad-top-half">
+          <h1 class="unit xs-1 s-1 m-1 l-1 xl-1 text-center yotta bold">ADOPT YOUR NEW BEST FRIEND!</h1>
+          <div class="unit xs-1 m-1-2 l-1 island-1 text-left">
+            <p>Before applying to adopt, please read through the terms and conditions below to see if you qualify as a suitable applicant.</p>
+          </div>
+      </div>
+    </div>
+    <div class="max-length pad-top">
+      <h2 class="unit xs-1 s-1 m-1 l-1 xl-1 text-center peta bold">Terms and Conditions</h1>
+      <div class="unit xs-1 m-1-2 l-1 island-1 text-left">
+        <p class="micro">This application form is not a guarantee that the dog you have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+        <p class="micro">LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+        <p class="micro">In the event that the dog you have applied for is approved to another adopter before my application is processed you will select another dog from the LOYAL Rescue Inc. website and continue with the application screening.</p>
+        <p class="micro">Virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. You should not be expecting a pre-trained dog and must be willing to work with this dog to help it overcome any issues it may have, or develops while under your care.</p>
+        <p class="micro">Although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. The approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
+        <p class="micro">This dog will be being fostered in a location close enough for you to personally travel to, in order to adopt this dog, should you be the approved adopter.</p>
+
+        <div class="push-1-2 pad-bottom">
+          <input type="checkbox" id="agree" required aria-describedby="agree-error">
+          <label class="label" for="agree">I agree to Terms and Conditions</label>
+          <p class="error-message milli island-1-4 push-0" id="agree-error">
+            <i class="icon i-32"><svg><use xlink:href="images.icons.svg#error" /></svg></i>
+            <span class="icon-label span">Agree to continue</span>
+          </p>
+        </div>
+      </div>
+      </div>
+  </div>
+
+
+
+    <div class="header max length">
+      <h2 class="tera unit xs-1 s-1 m-1 l-1 xl-1 text-center yotta bold">Registration Form</h2>
+    </div>
+
+    <form class="max-length" method="post" novalidate>
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label milli text-center span">Please fill the required fields</span>
+        </h3>
+      </div>
+
+      <div class="push-1-2">
+        <label class="label" for="name">Name</label>
+        <input id="name" required aria-describedby="name-error">
+        <p class="error-message milli island-1-4 push-0" id="name-error">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label span">Please provide a name</span>
+        </p>
+      </div>
+
+      <div class="push-1-2">
+        <label class="label" for="email">Email</label>
+        <input type="email" id="email" required aria-describedby="email-error">
+        <p class="error-message milli island-1-4 push-0" id="email-error">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label span">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="push-1-2">
+        <label class="label" for="url">Website <em class="flag-otional milli normal">(optional)</em></label>
+        <input type="url" id="url">
+      </div>
+
+      <div class="push-1-2">
+        <label class="label" for="name">Address</label>
+        <input id="address" required aria-describedby="address-error">
+        <p class="error-message milli island-1-4 push-0" id="address-error">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label span">Please provide a your adress</span>
+        </p>
+      </div>
+
+      <div class="push-1-2">
+        <label class="label" for="choices">Card type</label>
+        <select id="choices" required aria-describedby="name-error">
+          <option value="">---</option>
+          <option>Visa</option>
+          <option>American Express</option>
+          <option>Debit</option>
+        </select>
+        <p class="error-message milli island-1-4 push-0" id="card-error">
+          <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label span">Please select a card type</span>
+        </p>
+      </div>
+
+      <div class="pad-b-2">
+        <button class="btn" type="submit">Send</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="grid color">
+      <div class="unit xs-1 m-1 l-1 island-1-2 text-center">
+        <img class="i--96 icon" src="../images/logo.svg" alt="logo">
+      </div>
+      <div class="unit xs-1 m-1-2 l-1 island-1-2 text-center">
+        <p>©2017 Loyal Rescue Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>

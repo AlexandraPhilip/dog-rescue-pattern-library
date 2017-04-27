@@ -13,7 +13,11 @@ html {
   font-family: var(--font-secondary);
 }
 
-h1, h2, h3 {
+h1 {
+  color: var(--color-white);
+}
+
+h2, h3 {
   color: var(--color-primary);
 }
 
@@ -39,6 +43,7 @@ a {
   color: var(--color-primary);
 }
 
-mark {
-  background-color: var(--color-whatever);
+p {
+  font-family: var(--font-secondary);
+  color: var(--color-black);
 }
